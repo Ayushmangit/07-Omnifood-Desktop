@@ -13,6 +13,17 @@ strong {
   row-gap: 9.6rem;
   column-gap: 4.4rem;
 }
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* .grid-margin-bottom {
+  margin-bottom: 9.6rem;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid-center-vertically {
   align-items: center;
 }
@@ -133,4 +144,43 @@ strong {
 
 .center-text {
   text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+.list-icon {
+  color: #cf711f;
+  font-size: 3rem;
+  max-width: 100%;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #555;
+  gap: 1.2rem;
+}
+.btn--form {
+  font-size: 2rem;
+  background-color: #45260a;
+  color: #fdf2e9;
+  border-radius: 11px;
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.3s;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  /* outline-color: 2px solid #e67e22; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.582);
 }

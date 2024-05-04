@@ -36,6 +36,9 @@ greens : #51cf66
 
 --shades :
 #cf711f
+#45260a
+
+#eb984e
 
 
 --Accents : 
@@ -46,6 +49,8 @@ greens : #51cf66
 #555
 #333
 #6f6f6f  lightest grey allowed on this #fdf2e9
+
+#e0e0e0 lightest grey allowed on white background
 
 --03 Shadows
 
@@ -370,23 +375,6 @@ body {
 .diets {
   padding: 0.8rem 1.6rem;
 }
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  list-style: none;
-}
-.list-icon {
-  color: #cf711f;
-  font-size: 3rem;
-}
-.list-item {
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-  color: #555;
-  gap: 1.2rem;
-}
 
 .all-recipes {
   text-align: center;
@@ -448,4 +436,192 @@ body {
 
 .gallery-items img:hover {
   transform: scale(1.2);
+}
+/* ********************* */
+/* pricing section */
+/* ********************* */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+.pricing-plan--Starter {
+  justify-self: end;
+  padding: 4.6rem;
+  border: 2px solid #fdf2e9;
+}
+
+.pricing-plan--Starter .list li:last-child {
+  color: #e0e0e0;
+}
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  position: relative;
+  padding: 4.8rem;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  position: absolute;
+  content: "Best value";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.8rem 8rem;
+  background-color: #ffd43b;
+  border-radius: 4.8px;
+  color: #333;
+  font-weight: 700;
+  top: 8%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  color: #6f6f6f;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3.2rem;
+  color: #e67e22;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ********************* */
+/*CTA section*/
+/* ********************* */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta-grid {
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.074);
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+.cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 4.8rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-text-box .heading-secondary {
+  color: #45260a;
+  margin-bottom: 2.4rem;
+}
+.cta-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.274),
+      rgba(230, 125, 34, 0.247)
+    ),
+    url("../img/bhains.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  color: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  border: none;
+  background-color: #fdf2e9;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form button {
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
+}
+
+.cta-grid *:focus {
+  outline: none;
+  /* outline-color: 2px solid #e67e22; */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.514);
 }

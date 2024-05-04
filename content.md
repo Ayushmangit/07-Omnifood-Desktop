@@ -137,6 +137,6 @@ Privacy & terms
 -how it works
 -meals (and list of diets)
 -testimonials + gallery
--features + pricinghg
+-features + pricing
 -CTA(call to action)
 -footer
