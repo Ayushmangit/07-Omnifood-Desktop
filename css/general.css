@@ -165,6 +165,7 @@ strong {
   align-items: center;
   font-size: 1.8rem;
   color: #555;
+  line-height: 1.2;
   gap: 1.2rem;
 }
 .btn--form {

@@ -86,16 +86,15 @@ body {
   font-weight: 400;
   color: #555;
 }
-/* **********************/
-/* general components */
-/* **********************/
 
 /* ********************* */
 /* header */
 /* ********************* */
+
 .logo {
   height: 2.2rem;
 }
+
 .header {
   display: flex;
   background-color: #fdf2e9;
@@ -103,9 +102,11 @@ body {
   align-items: center;
 
   /* to make the navigation sticky we need it to have a fixed height */
+
   height: 9.6rem;
   padding: 0 4.8rem;
 }
+
 /* ********************* */
 /*Navigation */
 /* ********************* */
@@ -114,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -127,6 +128,7 @@ body {
 
   transition: all 0.3s;
 }
+
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #cf711f;
@@ -145,6 +147,24 @@ body {
   background-color: #cf711f;
 }
 /* ********************* */
+/* hamburger menu */
+/* ********************* */
+.button-mobile-nav {
+  display: none;
+  border: none;
+
+  background: none;
+  cursor: pointer;
+}
+.icon-mobile-nav {
+  font-size: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* ********************* */
 /* Hero section */
 /* ********************* */
 
@@ -152,6 +172,7 @@ body {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -311,7 +332,7 @@ body {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
 }
 .meal-description {
-  padding: 1.6rem 3.2rem;
+  padding: 0.8rem 1.6rem;
 }
 .section-meals {
   padding: 9.6rem 0;
