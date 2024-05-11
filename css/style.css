@@ -70,23 +70,6 @@ SPACING SYSTEM (px)
 
 */
 
-html {
-  /* font-size: 10px; */
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
 /* ********************* */
 /* header */
 /* ********************* */
@@ -101,6 +84,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  position: relative;
   /* to make the navigation sticky we need it to have a fixed height */
 
   height: 9.6rem;
@@ -162,6 +146,9 @@ body {
 }
 
 .icon-mobile-nav[name="close-outline"] {
+  /* opacity: 0;
+  pointer-events: none;
+  visibility: hidden; */
   display: none;
 }
 /* ********************* */
