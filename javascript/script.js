@@ -1,17 +1,7 @@
-console.log("hello world!");
-
-// const h1 = document.querySelector(".heading-primary");
-// console.log(h1);
-
-// h1.addEventListener("click", function () {
-//   h1.textContent = "ayushman chauhan";
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
-
 // set Nav-open
 const btnNavEL = document.querySelector(".button-mobile-nav");
 const headerEL = document.querySelector(".header");
+
 const linksEL = document.querySelectorAll("a:link");
 linksEL.forEach(function (e) {
   e.addEventListener("click", function () {
