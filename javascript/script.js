@@ -12,6 +12,12 @@ console.log("hello world!");
 // set Nav-open
 const btnNavEL = document.querySelector(".button-mobile-nav");
 const headerEL = document.querySelector(".header");
+const linksEL = document.querySelectorAll("a:link");
+linksEL.forEach(function (e) {
+  e.addEventListener("click", function () {
+    headerEL.classList.remove("nav-open");
+  });
+});
 
 btnNavEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav-open");
