@@ -112,6 +112,8 @@ instead, 1rem = 1em = 16px  */
 
   .button-mobile-nav {
     display: block;
+    z-index: 1;
+
   }
 
   .main-nav {
@@ -298,4 +300,6 @@ font size (px)
 /* 
 
 SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 /96 / 128*/
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 /96 / 128
+
+*/
