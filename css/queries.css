@@ -246,8 +246,7 @@ instead, 1rem = 1em = 16px  */
     .grid--2-cols,
     .grid--3-cols,
     .grid--4-cols,
-    .cta-grid,
-    .testimonials {
+    .cta-grid, {
       grid-template-columns: 1fr;
     }
     .section-hero {
