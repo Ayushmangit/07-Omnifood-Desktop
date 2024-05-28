@@ -232,18 +232,21 @@ instead, 1rem = 1em = 16px  */
   /* ********************* */
   /* below 512px ( small tablets) */
   /* ********************* */
-  @media (max-width: 32rem) {
+  @media (max-width: 32em) {
     html {
       font-size: 37.5%;
     }
+  .subheading{
+    font-size:2.4rem;
+  }
+    
     .grid {
       row-gap: 4.8rem;
     }
     .grid--2-cols,
     .grid--3-cols,
     .grid--4-cols,
-    .cta-grid,
-    .testimonials {
+    .cta-grid,.testimonials {
       grid-template-columns: 1fr;
     }
     .section-hero {
