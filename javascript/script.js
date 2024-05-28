@@ -19,6 +19,30 @@ const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
 
 //
+
+// sticky nav
+const sectionheroEL = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+      console.log(ent);
+    } else if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+      console.log(ent);
+    }
+  },
+  {
+    // inside of the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionheroEL);
 // smooth scrolling animation
 
 ///////////////////////////////////////////////////////////
