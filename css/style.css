@@ -116,6 +116,7 @@ SPACING SYSTEM (px)
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #cf711f;
+  scale: 1.1;
 }
 
 .main-nav-link.main-nav-link-cta:link,
